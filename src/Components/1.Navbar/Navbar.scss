@@ -1,0 +1,113 @@
+@import '/src/App.scss';
+
+.navbar {
+  width: 100%;
+  max-height: 65px;
+  background:  #0A1728CC !important;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+
+  &_menubox {
+    width: auto;
+    height: 60px;
+
+    &-menu {
+      &-item {
+        border-right: 1px solid #FFFFFF33;
+
+        &-link {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 14px;
+          letter-spacing: 0.1em;
+          text-align: left;
+          color: white !important;
+          text-transform: uppercase;
+          padding: 0 !important;
+
+          &:hover {
+            color: $lightBlue !important;
+          }
+        }
+      }
+    }
+  }
+
+  &_logobox {
+    width: 85px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: -13%;
+    margin: 0 auto;
+    background: white;
+
+    &-logo {
+      width: inherit;
+      max-height: 100px;
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
+  }
+
+  &_settingsbox {
+    width: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    &-menu {
+
+      &-item {
+        margin: 0 5px;
+        padding: 0 5px;
+        border-right: 1px solid #FFFFFF33;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+
+        &-searchBtn {
+          border: none;
+          background: transparent;
+          outline: none;
+          color: $orange;
+        }
+
+        &-phoneNumber {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: white;
+
+          &:hover {
+            color: $lightBlue !important;
+          }
+        }
+
+        &-language {
+          margin: 0 5px;
+          padding: 5px;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $lightBlue !important;
+          text-transform: uppercase;
+        }
+
+        &-menuIcon {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
