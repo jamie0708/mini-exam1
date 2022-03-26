@@ -18,7 +18,7 @@ body {
 
 ul {
   display: flex;
-  padding: 0;
+  padding: 0 !important;
   margin: 0 !important;
 }
 
@@ -30,5 +30,5 @@ li {
 
 a {
   margin: 0 10px;
-  text-decoration: none;
+  text-decoration: none !important;
 }

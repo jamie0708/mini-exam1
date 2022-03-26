@@ -4,11 +4,14 @@ import App from './App';
 import 'react-bootstrap-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-
+import {BrowserRouter} from 'react-router-dom'
+import {Provider} from './Contexts/Authorization/Authrization';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  <BrowserRouter>
+    <Provider>
+      <App/>
+    </Provider>
+  </BrowserRouter>
+</React.StrictMode>, document.getElementById('root'));
